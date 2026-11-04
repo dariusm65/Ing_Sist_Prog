@@ -2,7 +2,9 @@
     <nav class="navbar md:navbar-expand fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="${pageContext.request.contextPath}">Parking Lot</a>
-            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
             <dialog class="drawer drawer-end" tabindex="-1" id="navbarCollapse" aria-labelledby="navbarCollapseLabel">
@@ -14,11 +16,13 @@
                     <ul class="navbar-nav me-auto mb-2 md:mb-0">
                         <li class="nav-item">
                             <a class="nav-link ${pageContext.request.requestURI.substring(pageContext.request.requestURI.
-lastIndexOf("/")) eq '/about.jsp' ? ' active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About
+lastIndexOf("/")) eq '/about.jsp' ? ' active' : ''}" aria-current="page"
+                               href="${pageContext.request.contextPath}/about.jsp">About
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ${activePage eq 'Cars' ? 'active' : ''}" href="${pageContext.request.contextPath}/Cars">Cars</a>
+                            <a class="nav-link ${activePage eq 'Cars' ? 'active' : ''}"
+                               href="${pageContext.request.contextPath}/Cars">Cars</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -27,11 +31,11 @@ lastIndexOf("/")) eq '/about.jsp' ? ' active' : ''}" aria-current="page" href="$
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
-                   <ul class="navbar-nav">
-                       <li class="nav-item">
-                       <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
-                       </li>
-                   </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
+                        </li>
+                    </ul>
                 </div>
             </dialog>
         </div>
